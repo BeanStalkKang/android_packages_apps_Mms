@@ -891,6 +891,7 @@ public class MessagingNotification {
                 noti.setTicker(context.getString(R.string.notification_ticker_privacy_mode));
             }
         }
+        TaskStackBuilder taskStackBuilder = TaskStackBuilder.create(context);
         taskStackBuilder.setTaskOnHome(false);
 
         // If we have more than one unique thread, change the title (which would
